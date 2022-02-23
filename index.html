@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>User's table with AJAX</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>Users</h1>
+			<div>
+				<button id="btn_load_users" class="btn active">Load Users</button>
+			</div>
+		</header>
+		<main>
+			<form action="" method="" id="formulario" class="formulario">
+				<input type="text" name="name" id="name" placeholder="Name">
+				<input type="text" name="age" id="age" placeholder="Age">
+				<input type="text" name="country" id="country" placeholder="Country">
+				<input type="email" name="email" id="email" placeholder="Email">
+				<button type="submit" class="btn">Add</button>
+			</form>
+			<div class="error_box" id="error_box">
+				<p>There was an error.</p>
+			</div>
+			<table id="tabla" class="tabla">
+				<tr>
+					<th>ID</th>
+					<th>Name</th>
+					<th>Age</th>
+					<th>Country</th>
+					<th>Email</th>
+				</tr>
+			</table>
+			<div class="loader" id="loader"></div>
+		</main>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
