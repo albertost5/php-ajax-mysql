@@ -6,7 +6,8 @@ let loaderDiv = document.getElementById("loader");
 loadBtn.addEventListener('click', function(){
 
     let request = new XMLHttpRequest();
-    request.open('GET', 'https://api.json-generator.com/templates/Kn4n6fEVUIsC/data');
+    // request.open('GET', 'https://api.json-generator.com/templates/Kn4n6fEVUIsC/data');
+    request.open('GET', 'php/users.php');
     request.setRequestHeader('Authorization', 'Bearer ' + 'i3xud8ubg5ll5yypdv2wzumdz5zlxo88grhakmrf');
     
     loaderDiv.classList.add('active');
@@ -25,7 +26,6 @@ loadBtn.addEventListener('click', function(){
             row.innerHTML += ("<td>" + user.email + "</td>");
             document.getElementById('user_table').appendChild(row);
         });
-
     };
 
     // 2 request received
