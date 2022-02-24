@@ -8,7 +8,7 @@ loadBtn.addEventListener('click', function(){
     let request = new XMLHttpRequest();
     // request.open('GET', 'https://api.json-generator.com/templates/Kn4n6fEVUIsC/data');
     request.open('GET', 'php/users.php');
-    request.setRequestHeader('Authorization', 'Bearer ' + 'i3xud8ubg5ll5yypdv2wzumdz5zlxo88grhakmrf');
+    // request.setRequestHeader('Authorization', 'Bearer ' + 'i3xud8ubg5ll5yypdv2wzumdz5zlxo88grhakmrf');
     
     loaderDiv.classList.add('active');
 

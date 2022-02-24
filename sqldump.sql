@@ -1,3 +1,5 @@
+CREATE DATABASE `php_ajax` CHARACTER SET `utf8` COLLATE `utf8mb4_general_ci`;
+
 CREATE TABLE `php_ajax`.`user` 
     ( `id` INT NOT NULL AUTO_INCREMENT ,
     `name` VARCHAR(255) NOT NULL , 
